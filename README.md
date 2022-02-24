@@ -1,6 +1,6 @@
 # intro_continual_learning
 
-<img src="https://www.pnas.org/content/pnas/114/13/3521/F1.medium.gif">
+<img src="files/F1.large.jpg">
 
 This is a tutorial to connect the mathematics and machine learning theory to practical implementations addressing the continual learning problem of artificial intelligence. We will learn this in python by examining and decontructing a method called [elactic weight colsolidation](https://www.pnas.org/content/114/13/3521)
 
