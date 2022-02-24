@@ -8,6 +8,6 @@ There is a shortage of tutorials that aim to directly help the student connect t
 
 Credit/References:
 
-1.[Overcoming catastrophic forgetting in neural networks](https://www.pnas.org/content/114/13/3521)
+1. [Overcoming catastrophic forgetting in neural networks](https://www.pnas.org/content/114/13/3521)
 
 2. [shivamsaboo17](https://github.com/shivamsaboo17/Overcoming-Catastrophic-forgetting-in-Neural-Networks)
