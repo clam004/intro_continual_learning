@@ -4,6 +4,10 @@ This is a tutorial to connect the mathematics and machine learning theory to pra
 
 There is a shortage of tutorials that aim to directly help the student connect the math to the code. This is especially true in artificial intelligence where so much is published everyday. While it is true that the average programmer can load a "out of the box" library in 10 minutes and be running the latest model for a common task in 15 minutes, this is very different from being able to understand the mathematical theory behind the advances, the practical implementation details needed for real world deployment and the ability to adapt and combine the fundamental concepts to new applications not yet imagined.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/clam004/intro_continual_learning/main/files/F1.large.jpg" height=500 width=500 >
+</p>
+
 ### What does elastic weight colsolidation do?
 
 The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. When an artificila neural network is trained on a new training set, unless that new training set includes all the old tasks combined with the new task, it generally is subject to catastrophic forgetting, whereby learning to solve new task B accompanies degradation of performance at old task A. In contrast, human neural networks can maintain expertise on tasks that they have not experienced for a long time. EWC addresses this problem by selectively slowing down learning on the weights (ie parameters, synaptic strengths) important for those old tasks.
@@ -16,7 +20,7 @@ The ability to learn tasks in a sequential fashion is crucial to the development
 - cudnn7.6.4
 - PyTorch 1.10.0
 
-### Running just the model API without Docker
+### These same steps should work on MacOS to
 
 ```console
 you@you:/path/to/folder$ pip3 install virtualenv
