@@ -8,8 +8,32 @@ There is a shortage of tutorials that aim to directly help the student connect t
 
 The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. When an artificila neural network is trained on a new training set, unless that new training set includes all the old tasks combined with the new task, it generally is subject to catastrophic forgetting, whereby learning to solve new task B accompanies degradation of performance at old task A. In contrast, human neural networks can maintain expertise on tasks that they have not experienced for a long time. EWC addresses this problem by selectively slowing down learning on the weights (ie parameters, synaptic strengths) important for those old tasks.
 
+## Setup
+
+- Ubuntu 18.04.3 LTS (bionic)
+- Python 3.8
+- Cuda 10.1
+- cudnn7.6.4
+- PyTorch 1.10.0
+
+### Running just the model API without Docker
+
+```console
+you@you:/path/to/folder$ pip3 install virtualenv
+
+you@you:/path/to/folder$ virtualenv venv --python=python3.8
+
+you@you:/path/to/folder$ source venv/bin/activate
+
+(venv) you@you:/path/to/folder$ pip3 install -r requirements.txt
+
+(venv) you@you:/path/to/folder$ jupyter notebook
+```
+
 ### Credit/References:
 
-1. [Overcoming catastrophic forgetting in neural networks](https://www.pnas.org/content/114/13/3521)
+1. [James Kirkpatrick et al. Overcoming catastrophic forgetting in neural networks 2016(10.1073/pnas.1611835114)](https://www.pnas.org/content/114/13/3521)
 
 2. [shivamsaboo17](https://github.com/shivamsaboo17/Overcoming-Catastrophic-forgetting-in-Neural-Networks)
+
+3. [moskomule](https://github.com/moskomule/ewc.pytorch)
