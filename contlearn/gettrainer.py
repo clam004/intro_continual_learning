@@ -19,12 +19,11 @@ def one_epoch_baseline(model: nn.Module, data_loader: torch.utils.data.DataLoade
     optimizer = optim.SGD(params=model.parameters(), lr=lr)
     for input, target in data_loader:
         input = input.squeeze(1)
-        print(input.shape)
         input, target = var2device(input), var2device(target)
         optimizer.zero_grad()
         output = model(input)
         loss = F.cross_entropy(output, target)
-        epoch_loss += loss.data[0]
+        epoch_loss += loss.item()
         loss.backward()
         optimizer.step()
     return epoch_loss / len(data_loader)
@@ -33,7 +32,7 @@ def test(model: nn.Module, data_loader: torch.utils.data.DataLoader):
     model.eval()
     correct = 0
     for input, target in data_loader:
-        input, target = variable(input), variable(target)
+        input, target = var2device(input), var2device(target)
         input = input.squeeze(1)
         output = model(input)
         correct += (F.softmax(output, dim=1).max(dim=1)[1] == target).data.sum()
