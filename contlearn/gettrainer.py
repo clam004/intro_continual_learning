@@ -17,7 +17,7 @@ def one_epoch_baseline(model: nn.Module, data_loader: torch.utils.data.DataLoade
     epoch_loss = 0
     optimizer = optim.SGD(params=model.parameters(), lr=lr)
     for input, target in data_loader:
-        input, target = variable(input), variable(target)
+        input, target = var2device(input), var2device(target)
         optimizer.zero_grad()
         output = model(input)
         loss = F.cross_entropy(output, target)
