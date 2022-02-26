@@ -5,7 +5,7 @@ This is a tutorial to connect the mathematics and machine learning theory to pra
 There is a shortage of tutorials that aim to directly help the student connect the math to the code. This is especially true in artificial intelligence where so much is published everyday. While it is true that the average programmer can load a "out of the box" library in 10 minutes and be running the latest model for a common task in 15 minutes, this is very different from being able to understand the mathematical theory behind the advances, the practical implementation details needed for real world deployment and the ability to adapt and combine the fundamental concepts to new applications not yet imagined.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/clam004/intro_continual_learning/main/files/notebook1.png" height=500 width=500 >
+<img src="https://raw.githubusercontent.com/clam004/intro_continual_learning/main/files/notebook1.png" height=1200 width=600 >
 </p>
 
 ### What does elastic weight colsolidation do?
