@@ -10,7 +10,7 @@ I wish there were more learning tools in this style that directly try to help th
 <img src="https://raw.githubusercontent.com/clam004/intro_continual_learning/main/files/notebook1.png" height=1200 width=600 >
 </p>
 
-### What does elastic weight colsolidation do?
+### What does elastic weight consolidation do?
 
 The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. When an artificial neural network is trained on a new training set, unless that new training set includes all the old tasks combined with the new task, it generally is subject to catastrophic forgetting, whereby learning to solve new task B accompanies degradation of performance at old task A. In contrast, human neural networks can maintain expertise on tasks that they have not experienced for a long time. EWC addresses this problem by selectively slowing down learning on the weights (ie parameters, synaptic strengths) important for those old tasks.
 
