@@ -4,7 +4,7 @@ This is a tutorial to connect the mathematics and machine learning theory to pra
 
 I wish there were more learning tools in this style that directly try to help the learner connect the math to the code, and do it using a simple but completely end to end project. While it is true that the average programmer can load a "out of the box" library in 5 minutes and be running the latest model solving a common task in 15 minutes, I often hear from engineers that although they are engineers, they feel under-developed in the math that underlies recent academic research in machine learning. I have received criticism from some that believe tutorials like this provide a shortcut for "average" engineers to "think" they understand the math behind a new flashy artificial intelligence concept, who think the joy of reading these papers should be reserved for the traditionally trained academics that have gone through the years of formal coursework. I think there is nothing wrong with motivating learners using a cool AI concept to learn more of the fundamental math on their own.
 
-"everyone can cook" - ratatouille
+"anyone can cook" - ratatouille
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/clam004/intro_continual_learning/main/files/notebook1.png" height=1200 width=600 >
