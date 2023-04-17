@@ -14,9 +14,9 @@ REQUIRED_PKGS = [
 ]
 
 setup(
-    name='ailab',
+    name='contlearn',
     version='0.1.0',
-    packages=find_packages(include=['ailab', 'ailab.*']),
+    packages=find_packages(include=['contlearn', 'contlearn.*']),
     install_requires=REQUIRED_PKGS,
     extras_require={
         'interactive': ['matplotlib>=2.2.0', 'jupyter'],
