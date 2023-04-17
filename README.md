@@ -36,6 +36,42 @@ you@you:/path/to/folder$ source venv/bin/activate
 (venv) you@you:/path/to/folder$ jupyter notebook
 ```
 
+#### install package using a setup.py and pip
+
+To install package for development, from inside the top-level or main ml_fara directory (the one where if you `ls` you see `setup.py`, `requirements.txt` and `README.md` in the same folder)
+run the below at the command line or terminal:
+
+```console
+(venv) you@you chat-api % pip install -e .
+```
+
+leave out the `-e` for production like: `pip install .`, The -e flag specifies that we want to installvin editable mode, which means that when we edit the files in our package we do not need to re-install the package before the changes come into effect. 
+
+For other development packages like jupyter notebook and matplotlib, run:
+
+```console
+(venv) you@you chat-api % pip install -e ".[interactive]"
+```
+
+you should see something like
+
+```
+Obtaining file:///Users/.../contlearn
+  Preparing metadata (setup.py) ... done
+Installing collected packages: minichatgpt
+  Running setup.py develop for minichatgpt
+Successfully installed fara-0....
+```
+
+Now from directories other than the top-level or main minichatgpt directory you can
+
+```python
+import contlearn
+from contlearn.utils import tools
+```
+
+and the changes you make to tools will be available to you with your next `import contlearn`, no `pip install -e .` required
+
 ### Credit/References:
 
 1. [James Kirkpatrick et al. Overcoming catastrophic forgetting in neural networks 2016(10.1073/pnas.1611835114)](https://www.pnas.org/content/114/13/3521)
